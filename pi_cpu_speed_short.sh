@@ -22,4 +22,3 @@ echo "PI CPU Speed: $cpuspeed MHz"
 
 # add blank line to log file
 # echo " " >>/home/pi/scripts/pi_cpu_speed.log
-

@@ -5,7 +5,7 @@ These scripts are intended to run speedtest or speedtest-cli on a raspberry pi t
 
 Before you can run the script, speedtest must be installed.  You can use the information in the following web link to install speedtest.  <https://www.raspberrypi.org/forums/viewtopic.php?t=266222> 
 
-Once installed, the following commands from the Terminal.  
+Once installed, the following commands can be run from the Terminal.
 
 	speedtest <-- provides verbose output with all messages.
 	

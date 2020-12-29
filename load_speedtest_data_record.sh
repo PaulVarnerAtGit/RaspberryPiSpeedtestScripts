@@ -1,6 +1,7 @@
-aaaa#!/bin/bash
+#!/bin/bash
 #load_speedtest_data_record.sh
-#Shell script to read speedtest log files and loads them into MY_SPEED_TEST table in MY_DATABASE
+#Shell script to read speedtest log file, parses the file, and loads them into a database.
+# Initially configured for the MY_SPEED_TEST table in MY_DATABASE.
 #echo "Shell script to load speedtest data into mysql database"
 
 #input(value passed in on command line as first parameter $1.

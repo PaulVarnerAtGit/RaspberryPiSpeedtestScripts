@@ -1,5 +1,6 @@
 #!/bin/bash
-# Append nightly action file contents to speedtest_date-info.log file
+# Moves daily speedtest log file to the log_history directory.
+# Script also logs running of this script in the /home/pi/scripts/roll_speedtest.log file.  
 # This script is intended to be run at 11:59 pm each day 
 
 #get current  date and time

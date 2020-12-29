@@ -1,8 +1,8 @@
 #!/bin/bash
 #speedtest.sh
-#speedtest script that runs /usr/local/bin/speedtest --simple 
-#and captures the output to speedtest_temp.log and copies it to speedtest.log 
-#then finally calls /home/pi/scripts/load_speedtest_data_record.sh
+#Script that runs /usr/local/bin/speedtest --simple and captures the output to speedtest_temp.log, copies output to speedtest.log, 
+# calls /home/pi/scripts/load_speedtest_data_record.sh to load data into a database, 
+# and finally removes speedtest_temp.log.   
 
 #log current date and time into new speedtest_temp.log file
 date > /home/pi/scripts/speedtest_temp.log

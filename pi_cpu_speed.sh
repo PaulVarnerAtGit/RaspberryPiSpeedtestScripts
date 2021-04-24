@@ -1,13 +1,16 @@
 #!/bin/bash
-# script to log Raspberry Pi cpu speed
+# File: pi_cpu_speed.sh
+# Author: Paul Varner 
+# Date: 4-24-2021
+# Description: Script to log Raspberry Pi cpu speed to pi_cpu_speed.log file.
 
-# add date / time to log file
+# Add current date / time to log file
 date >>/home/pi/scripts/pi_cpu_speed.log
 
-# execute the Raspberry Pi cpufreq scaling_cur_freq command 
+# Execute the Raspberry Pi cpufreq scaling_cur_freq command.
 i=`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq`
 
-# offset speed by 1000
+# offset speed by 1000 to convert to MHZ. 
 divideby=1000
 cpuspeed=$(echo $divideby $i | awk '{printf "%4.0f\n",$2/$1}' )
 
